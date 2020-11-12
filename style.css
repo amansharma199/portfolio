@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+.navbar{
+    width: 100%;
+    background-color: crimson;
+    padding: 15px ;
+    position: fixed;
+    z-index: 999;
+}
+.max_width{
+    width: 1300px;
+    width:100%;
+    padding: 0px 30px;
+
+}
+
+.navbar .max_width{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+
+.logo{
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+
+.menu li{
+    display: inline;
+    margin: auto 15px;
+}
+
+.menu li a{
+    color: white;
+    font-size: 18px;
+}
+
+.menu li a:hover{
+    color:pink;
+    
+}
+
+.burger{
+    display: none;
+}
+
+.row{
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px;
+}
+
+.main_container{
+    
+    height: 100vh;
+    background-color: black;
+    color: white;
+
+}
+
+.text{
+    position: absolute;
+    top:45%;
+    left: 10%;
+}
+
+
+.text1{
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.text2{
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -5px;
+}
+
+.text3{
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.text3 span{
+    color: crimson;
+}
+
+/* about section styling start  */
+
+.about{
+    margin-top: 80px;
+}
+
+.about h1{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+.aboutsec{
+    
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.about_img{
+    margin-right: 80px;
+    width: 30%;
+    height: auto;
+    
+}
+
+.about_img img{
+    width: 350px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.609);
+}
+
+.aboutdis{
+    width: 55%;
+}
+
+.aboutdis p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.aboutdis h2{
+    font-weight: 800;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.aboutdis p{
+    text-align: justify;
+}
+
+.aboutdis span{
+    color: crimson;
+    font-weight: 600;
+}
+
+
+/* skill styling start  */
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.skillsec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_left{
+    padding-right: 50px;
+    text-align: center;
+    margin-top: 40px;
+    width: 50%;
+}
+
+.skill_left p{
+    margin-top: 40px;
+    text-align: justify;
+    
+}
+
+.skill_right{
+    width: 50%;
+    padding-left: 50px;
+    margin-top: 110px;
+}
+
+.htmlskill{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.htmlskill::before{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 100%;
+    height: 3.5px;
+    background-color: thistle;
+
+}
+
+.htmlskill::after{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 90%;
+    height: 3.5px;
+    background-color: crimson;
+
+}
+
+
+.cssskill{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cssskill::before{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 100%;
+    height: 3.5px;
+    background-color: thistle;
+}
+
+.cssskill::after{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 80%;
+    height: 3.5px;
+    background-color: crimson;
+}
+
+.jsskill{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.jsskill::before{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 100%;
+    height: 3.5px;
+    background-color: thistle;
+}
+
+.jsskill::after{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 60%;
+    height: 3.5px;
+    background-color: crimson;
+}
+
+.phpskill{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.phpskill::before{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 100%;
+    height: 3.5px;
+    background-color: thistle;
+}
+
+.phpskill::after{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 30%;
+    height: 3.5px;
+    background-color: crimson;
+}
+
+
+/* contact styling start  */
+   
+.contact{
+    /* width: 100vw; */
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.contactsec{
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+}
+/* form section start  */
+
+
+form{
+    padding: 40px 0;
+}
+.contactsec input{
+    width: 40%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.contactsec #Discription{
+    width: 40%;
+    height: 150px;
+}
+
+#submit{
+    background-color: rgb(0, 170, 42);
+    color:white;
+    outline:none;
+    border-radius: 20px;
+    font-weight: 800;
+}
+
+/* contact styling end  */
+
+
+/* footer styling start  */
+.footer{
+    /* width: 100vw; */
+    background-color: rgba(0, 0, 0, 0.883);
+}
+
+.footertext{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footertext p{
+    margin: 5px 0;
+}
+
+
+/* footer styling end  */
+/* media query for resposnive  */
+
+@media (max-width: 1010px){
+    .about_img img{
+        width: 300px;
+    }
+}
+@media (max-width: 900px){
+    .about_img img{
+        width: 250px;
+    }
+}
+@media (max-width: 760px){
+    .max_width{
+        width: 1300px;
+        width:100%;
+        padding:0;}    
+
+        .burger{
+            display: block;
+            z-index: 9999;
+        }
+    .menu{
+        position: absolute;
+        top: 0px;
+        left: -100vw;
+        width: 100%;
+        height: 100vh;
+        background-color: turquoise;
+        
+        transition: all 0.3s ease;
+    }
+
+    .showmenu{
+        left: 0px;
+    }
+
+    .menu ul{
+        margin-top: 20px;
+    }
+    .menu ul li{
+        display: block;
+        text-align: center;
+        margin: 80px 0px;
+    }
+
+    .menu ul a{
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+
+/* about section  */
+    .aboutsec{
+    
+        margin: 50px;
+        display: block;
+    }
+    .aboutdis{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .about_img{
+        width: 100%;
+    }
+
+    .about_img img{
+        width: 100%;;
+    }
+
+    /* skill section  */
+
+    .skillsec{
+        width: 100%;
+        display: block;
+        
+
+    }
+
+    .skill_right{
+        width: 100%;
+        padding: 0 50px;
+        margin-top: 60px;
+    }
+
+    .skill_left{
+        width: 100%;
+        padding: 0 50px;
+        margin-top: 60px;
+    }
+    
+ /* form section start  */
+
+ .contactsec input{
+    width: 90%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.contactsec #Discription{
+    width: 90%;
+    height: 150px;
+}
+
+
+}
+
+
+@media (max-width: 520px){
+    .text1{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .text2{
+        font-size: 40px;
+        font-weight: 500;
+        margin-left: -5px;
+    }
+    
+    .text3{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

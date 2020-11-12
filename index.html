@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max_width">
+            <div class="logo">Aman <span>Sharma</span></div>
+            <div class="menu" id="menu" >
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="burger" id="burger" onclick="showmenu()">
+                <!-- <i class="fas fa-bars"></i> -->
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+
+    <div class="main_container" id="home">
+        <div class="max_width">
+            <div class="text">
+                <div class="text1">Hello, I am</div>
+                <div class="text2">Aman Sharma</div>
+                <div class="text3">I am a <span>Youtuber</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section start  -->
+    <div class="about" id="about">
+        <div class="max_width">
+            <h1>About Me</h1>
+                <hr style="height:3px; background-color: black;">
+              
+            <div class="aboutsec">
+              <div class="about_img"><img src="aboutme.jpg" alt=""></div>
+              <div class="aboutdis">
+                <h2>My name is Aman Sharma. <br>I am a <span>Front End Web Developer.</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique excepturi rem molestias accusantium inventore! Laboriosam pariatur in blanditiis molestiae delectus repellat, veritatis earum! Modi dolorum debitis fugiat consequuntur quasi, quae non nam commodi libero dicta, aspernatur facilis at tenetur, quis officia doloribus voluptate! Ipsa officiis voluptatibus numquam velit aperiam eius.</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <!-- about section end  -->
+
+    <!-- skill section start  -->
+    <div class="skill" id="skill">
+        <div class="max_width">
+            <h1 class="title">Skill</h1>
+            <hr style="height:3px; background-color: black;">
+            <div class="skillsec">
+                <div class="skill_left">
+                    <h1>My Skill</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nulla provident enim ratione corrupti natus maiores aliquam veritatis asperiores facilis voluptatum in praesentium accusamus, at iste explicabo quibusdam. Quisquam modi inventore, commodi illo voluptatibus deleniti necessitatibus laborum optio assumenda dolorum maiores soluta ea accusamus quo totam beatae saepe nulla illum facere eius officia quidem. Inventore, voluptatem! Ex quos aperiam totam nulla, sint facilis praesentium et perspiciatis, odit, id dolorem exercitationem dolor consequuntur. Vero delectus eum, dolore tenetur, quae, beatae molestiae sint totam sit eveniet voluptatibus est ducimus sapiente sequi obcaecati corrupti placeat voluptatem aliquid. Odit fuga dolorem a eius rem!</p>
+                </div>
+                <div class="skill_right">
+                    <div class="htmlskill">
+                        <div class="language"><h2>HTML</h2></div>
+                        <div class="percentageskill"><h2>90%</h2></div>
+                    </div>
+
+                    <div class="cssskill">
+                        <div class="language"><h2>CSS</h2></div>
+                        <div class="percentageskill"><h2>80%</h2></div>
+                    </div>
+
+                    <div class="jsskill">
+                        <div class="language"><h2>JavaScript</h2></div>
+                        <div class="percentageskill"><h2>60%</h2></div>
+                    </div>
+
+                    <div class="phpskill">
+                        <div class="language"><h2>PHP</h2></div>
+                        <div class="percentageskill"><h2>30%</h2></div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+    <!-- skill section end  -->
+
+
+    <!-- Contact section start  -->
+    <div class="contact" id="contact">
+        <div class="max_width">
+            <h1 class="title">Contact Me</h1>
+                <hr style="height:3px; background-color: black;">
+              
+            <div class="contactsec">
+              <form action="false">
+                  <input type="text" id="name" placeholder="Enter Your Name :"><br>
+                  <input type="text" id="Email" placeholder="Enter Your Email :"><br>
+                  <input type="text" id="Discription" placeholder="Write Your Discription :"><br>
+                  <input type="submit" id="submit">
+
+              </form>
+            </div>  
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="max_width">
+            <div class="footertext">
+                Created By: Aman Sharma
+                <p>@Copyright to Aman Sharma</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- contact section end  -->
+
+
+
+    <script>
+        function showmenu() {
+            var x = document.getElementById("menu");
+                if (x.style.left === "-100vw") {
+                    x.style.left = "0px";
+                } else {
+                    x.style.left = "-100vw";
+                }
+}
+        
+    </script>
+</body>
+</html>
